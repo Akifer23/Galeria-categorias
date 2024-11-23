@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Productos</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1 style="text-align: center;">Galería de Productos</h1>
+
+  <!-- Navegación de categorías -->
+  <div class="tab-container">
+    <button class="tab-button active" data-tab="ropa-mujer">Ropa de Mujer</button>
+    <button class="tab-button" data-tab="perfumes">Perfumes</button>
+    <button class="tab-button" data-tab="joyeria">joyeria</button>
+  </div>
+
+  <!-- Contenedores por categoría -->
+  <div class="categories">
+    <div class="category active" id="ropa-mujer">
+      <h2>Ropa de Mujer</h2>
+      <div class="gallery">
+        <div class="product" data-product="Blusa">
+          <img src="./imagenes/una blusa.png" alt="Blusa">
+          <h3>Blusa</h3>
+        </div>
+      </div>
+    </div>
+    <div class="category" id="perfumes">
+      <h2>Perfumes</h2>
+      <div class="gallery">
+        <div class="product" data-product="Perfumes">
+          <img src="./imagenes/una botella de perfume.png" alt="Perfume">
+          <h3>Perfume</h3>
+        </div>
+      </div>
+    </div>
+    <div class="category" id="joyeria">
+      <h2>Joyeria</h2>
+      <div class="gallery">
+        <div class="product" data-product="joya">
+          <img src="./imagenes/un collar de joyería.png" alt="joya">
+          <h3>Perfume</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="selection-container">
+    <h2>Seleccionados</h2>
+    <ul id="selected-products"></ul>
+    <button id="send" disabled>Enviar al WhatsApp</button>
+  </div>
+
+  <script src="/JS/script.js"></script>
+</body>
+</html>
