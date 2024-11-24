@@ -107,4 +107,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  document.addEventListener("DOMContentLoaded", () => {
+    const flip = document.querySelectorAll(".vuelta");
+  
+    flip.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const card = button.closest(".card");
+        card.classList.toggle("active");
+      });
+    });
+  });
+  
+  
   
