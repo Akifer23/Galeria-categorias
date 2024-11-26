@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Enviar productos seleccionados al WhatsApp
     send.addEventListener("click", () => {
       if (selectedProducts.length > 0) {
-        const message = `Hola, quiero pedir:\n${selectedProducts.join("\n")},`;
+        const message = `Hola, quiero informacin sobre:\n${selectedProducts.join("\n")},`;
         const whatsappUrl = `https://wa.me/${vendorPhone}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank"); // Abre WhatsApp en una nueva pestaña
       }
